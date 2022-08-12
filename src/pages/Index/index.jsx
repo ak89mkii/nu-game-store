@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import '../../App.css';
 import S1 from '../../components/S1/S1.jsx'
 import S2 from '../../components/S2/S2.jsx'
+import S3 from '../../components/S3/S3.jsx'
 import Contact from '../../components/Contact/Contact.jsx'
 import Portfolio from '../../components/Portfolio/Portfolio.jsx'
 import Menu from '../../components/Menu/Menu.jsx'
@@ -21,7 +22,8 @@ class Home extends Component {
         s2: 's2',
         s2TitleSub: 's2TitleSub',
         icon: sun,
-        iconSize: 'iconSize'
+        iconSize: 'iconSize',
+        categories: <S1 />,
     }
 
     toggleMode = () => {
@@ -67,7 +69,18 @@ class Home extends Component {
                     iconSize={this.state.iconSize}
                 />
                 <Portfolio />
-                <S1 />
+                {this.state.categories}
+                <S3 
+                
+                s2={this.state.s2}
+                s2TitleSub={this.state.s2TitleSub}/>
+                <S2 
+                    s2={this.state.s2}
+                    s2TitleSub={this.state.s2TitleSub}
+                />
+                <Contact
+                    s2={this.state.s2}
+                    s2TitleSub={this.state.s2TitleSub}/>
             </div>
         )
     }

@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
 import Carousel from 'react-bootstrap/Carousel';
 import { Container } from 'react-bootstrap';
-import '../../App.css';
+import './Portfolio.css';
 import Collect from './img/collect.png';
 import Gunpla from './img/gunpla.png';
 import Sega from './img/sega.png';
 import Tabletop from './img/tabletop.png';
 import Systems from './img/systems.png';
 
-class Portfolio extends Component {
+class Slides extends Component {
     state = {
 
     }
@@ -16,7 +16,9 @@ class Portfolio extends Component {
     render() {
         return (
             <div id='portfolio' className="portfolio">
+                <br></br>
                 <Container>
+                <h2 className='main2'>"You will never find a more complete hive of nerds and geek-ery."</h2>
                     <Carousel>
                         <Carousel.Item>
                             <img
@@ -79,9 +81,10 @@ class Portfolio extends Component {
                         </Carousel.Item>
                     </Carousel>
                 </Container>
+                <br></br>
             </div>
         )
     }
 }
 
-export default Portfolio
+export default Slides
