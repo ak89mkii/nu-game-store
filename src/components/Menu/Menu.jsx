@@ -17,7 +17,7 @@ const Header = (props) => {
                 <Form.Check 
                     type="switch"
                     id="custom-switch"
-                    label={props.mode}
+                    label={props.modeText}
                     onClick={props.toggleMode}
                 />
             </Form>

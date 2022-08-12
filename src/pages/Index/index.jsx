@@ -14,6 +14,7 @@ class Home extends Component {
     state = {
         open: false,
         mode: 'light',
+        modeText: 'Light Mode',
         photo: 'photo',
         title: 'lightTitle',
         menu:  'ui menu',
@@ -30,6 +31,7 @@ class Home extends Component {
         if (this.state.mode == 'light') {
             this.setState({
                 mode: 'dark',
+                modeText: 'Dark Mode',
                 photo: 'photoDark',
                 title: 'darkTitle',
                 menu: 'ui inverted menu',
@@ -42,6 +44,7 @@ class Home extends Component {
         } else if (this.state.mode == 'dark') {
             this.setState({
                 mode: 'light',
+                modeText: 'Light Mode',
                 photo: 'photo',
                 title: 'lightTitle',
                 menu: 'ui menu',
@@ -61,6 +64,7 @@ class Home extends Component {
                 <Menu 
                     open={this.state.false}
                     mode={this.state.mode}
+                    modeText={this.state.modeText}
                     toggleMode={this.toggleMode}
                     photo={this.state.photo}
                     title={this.state.title}
