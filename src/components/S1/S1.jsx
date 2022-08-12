@@ -3,9 +3,9 @@ import CardGroup from 'react-bootstrap/CardGroup';
 import ListGroup from 'react-bootstrap/ListGroup';
 import { Container, Card, Button } from 'react-bootstrap';
 import './S1.css';
-import S3 from '../../components/S3/S3.jsx'
-import S2 from '../../components/S2/S2.jsx'
-
+import VGInfo from '../../components/VGInfo/VGInfo.jsx'
+// import VGInfo from '../../components/S2/S2.jsx'
+// import VGInfo from '../../components/S2/S2.jsx'
 
 class S1 extends Component {
     state = {
@@ -20,7 +20,7 @@ class S1 extends Component {
     toggleVG = () => {
         if (this.state.openVG == false) {
             this.setState({
-                openVG: <S2 />,
+                openVG: <VGInfo />,
                 buttonVG: 'Close View',
                 buttonColorVG: 'dark'
             })

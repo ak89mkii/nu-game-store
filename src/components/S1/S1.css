@@ -7,6 +7,10 @@
   font-weight: 300;
 }
 
+.break {
+  visibility: hidden;
+}
+
 /* Section 01 (S1): */
 
 .s1 {
