@@ -32,10 +32,10 @@ class S1 extends Component {
                             <Card.Title>Video Games</Card.Title>
                             <Card.Text>
                             <ListGroup variant="flush">
-                                <ListGroup.Item>Retro Games (SNES, Genesis, PS1, etc.)</ListGroup.Item>
-                                <ListGroup.Item>Modern Games (PS5, Switch, Series X|S, etc.)</ListGroup.Item>
                                 <ListGroup.Item>Accessories (Controllers, Headsets, Mechanical Keyboards, etc.)</ListGroup.Item>
                                 <ListGroup.Item>Consoles (Fom Atari 2600 to PS5)</ListGroup.Item>
+                                <ListGroup.Item>Modern Games (PS5, Switch, Series X|S, etc.)</ListGroup.Item>
+                                <ListGroup.Item>Retro Games (SNES, Genesis, PS1, etc.)</ListGroup.Item>
                             </ListGroup>
                             </Card.Text>
                             </Card.Body>
@@ -55,6 +55,7 @@ class S1 extends Component {
                                 <ListGroup.Item>Board Games</ListGroup.Item>
                                 <ListGroup.Item>Collectible Card Games (MGT, Pokemon, Key Forge, etc.)</ListGroup.Item>
                                 <ListGroup.Item>Roll Playing Games (D&D, Fate Core, etc.)</ListGroup.Item>
+                                <ListGroup.Item>Accessories (Dice, Card Mats, Card Sleeves, etc.)</ListGroup.Item>
                             </ListGroup>
                             </Card.Text>
                             </Card.Body>
@@ -71,14 +72,17 @@ class S1 extends Component {
                             <Card.Title>Collectibles</Card.Title>
                             <Card.Text>
                             <ListGroup variant="flush">
-                                <ListGroup.Item>Board Games</ListGroup.Item>
-                                <ListGroup.Item>Collectible Card Games (MGT, Pokemon, Key Forge, etc.)</ListGroup.Item>
-                                <ListGroup.Item>Roll Playing Games (D&D, Fate Core, etc.)</ListGroup.Item>
+                            <ListGroup.Item>Figures (Legends, McFarlan, S.H Figuart)</ListGroup.Item>
+                                <ListGroup.Item>Funko Pop!</ListGroup.Item>
+                                <ListGroup.Item>Gunpla (Gundam Model Kits)</ListGroup.Item>
+                                <ListGroup.Item>Statues (Banpresto)</ListGroup.Item>
                             </ListGroup>
                             </Card.Text>
                             </Card.Body>
                             <Card.Footer>
-                            <small className="text-muted">Last updated 3 mins ago</small>
+                                <small className="text-muted">
+                                    <Button variant="warning">Show More</Button>
+                                </small>
                             </Card.Footer>
                         </Card>
                     </CardGroup>
