@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Carousel from 'react-bootstrap/Carousel';
 import { Container } from 'react-bootstrap';
-import './Portfolio.css';
+import './Slides.css';
 import Collect from './img/collect.png';
 import Gunpla from './img/gunpla.png';
 import Sega from './img/sega.png';

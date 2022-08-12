@@ -4,7 +4,7 @@ import S1 from '../../components/S1/S1.jsx'
 import S2 from '../../components/S2/S2.jsx'
 import S3 from '../../components/S3/S3.jsx'
 import Contact from '../../components/Contact/Contact.jsx'
-import Portfolio from '../../components/Portfolio/Portfolio.jsx'
+import Slides from '../../components/Slides/Slides.jsx'
 import Menu from '../../components/Menu/Menu.jsx'
 import Footer from '../../components/Footer/Footer.jsx'
 import sun from '../../img/sun.png'
@@ -68,7 +68,7 @@ class Home extends Component {
                     icon={this.state.icon}
                     iconSize={this.state.iconSize}
                 />
-                <Portfolio />
+                <Slides />
                 <S1 />
                 <S3 
                     s2={this.state.s2}

@@ -4,7 +4,7 @@ import CardGroup from 'react-bootstrap/CardGroup';
 import ListGroup from 'react-bootstrap/ListGroup';
 import { Container, Card } from 'react-bootstrap';
 import '../../App.css';
-import Portfolio from '../Portfolio/Portfolio.jsx'
+import Portfolio from '../Slides/Slides.jsx'
 
 
 class S3 extends Component {
