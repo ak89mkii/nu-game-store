@@ -3,19 +3,39 @@ import CardGroup from 'react-bootstrap/CardGroup';
 import ListGroup from 'react-bootstrap/ListGroup';
 import { Container, Card, Button } from 'react-bootstrap';
 import './S1.css';
+import S3 from '../../components/S3/S3.jsx'
+import S2 from '../../components/S2/S2.jsx'
 
 
 class S1 extends Component {
     state = {
         // Show More Button:
         openVG: false,
+        buttonVG: 'Show More',
+        buttonColorVG: 'warning',
         openBG: false,
         openCol: false
     }
 
+    toggleVG = () => {
+        if (this.state.openVG == false) {
+            this.setState({
+                openVG: <S2 />,
+                buttonVG: 'Close View',
+                buttonColorVG: 'dark'
+            })
+        } else if (this.state.openVG != false) {
+            this.setState({
+                openVG: false,
+                buttonVG: 'Show More',
+                buttonColorVG: 'warning'
+            })
+        }
+    }
+
     render() {
         // Show More Button:
-        const { open } = this.state
+        const { openVG } = this.state
         return (
             <div className="s1">
                 <br></br>
@@ -41,7 +61,7 @@ class S1 extends Component {
                             </Card.Body>
                             <Card.Footer>
                                 <small className="text-muted">
-                                    <Button variant="warning">Show More</Button>
+                                    <Button variant={this.state.buttonColorVG} onClick={this.toggleVG}>{this.state.buttonVG}</Button>
                                 </small>
                             </Card.Footer>
                         </Card>
@@ -88,6 +108,7 @@ class S1 extends Component {
                     </CardGroup>
                     </Container>
                 </Container>
+                {this.state.openVG}
                 <br></br>
             </div>
         )

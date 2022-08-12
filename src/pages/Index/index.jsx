@@ -24,7 +24,6 @@ class Home extends Component {
         s2TitleSub: 's2TitleSub',
         icon: sun,
         iconSize: 'iconSize',
-        // categories: <S1 />,
     }
 
     toggleMode = () => {
