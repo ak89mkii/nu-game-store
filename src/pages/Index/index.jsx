@@ -23,7 +23,7 @@ class Home extends Component {
         s2TitleSub: 's2TitleSub',
         icon: sun,
         iconSize: 'iconSize',
-        categories: <S1 />,
+        // categories: <S1 />,
     }
 
     toggleMode = () => {
@@ -69,18 +69,19 @@ class Home extends Component {
                     iconSize={this.state.iconSize}
                 />
                 <Portfolio />
-                {this.state.categories}
+                <S1 />
                 <S3 
-                
-                s2={this.state.s2}
-                s2TitleSub={this.state.s2TitleSub}/>
+                    s2={this.state.s2}
+                    s2TitleSub={this.state.s2TitleSub}
+                />
                 <S2 
                     s2={this.state.s2}
                     s2TitleSub={this.state.s2TitleSub}
                 />
                 <Contact
                     s2={this.state.s2}
-                    s2TitleSub={this.state.s2TitleSub}/>
+                    s2TitleSub={this.state.s2TitleSub}
+                />
             </div>
         )
     }

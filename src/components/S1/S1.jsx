@@ -1,20 +1,20 @@
 import React, { Component } from 'react';
-import StartButton from '../StartButton/StartButton.jsx'
 import CardGroup from 'react-bootstrap/CardGroup';
 import ListGroup from 'react-bootstrap/ListGroup';
-import { Container, Card } from 'react-bootstrap';
-import '../../App.css';
-import Portfolio from '../../components/Portfolio/Portfolio.jsx'
+import { Container, Card, Button } from 'react-bootstrap';
+import './S1.css';
 
 
 class S1 extends Component {
     state = {
-        // Subscribe Button:
-        open: false
+        // Show More Button:
+        openVG: false,
+        openBG: false,
+        openCol: false
     }
 
     render() {
-        // Subscribe Button:
+        // Show More Button:
         const { open } = this.state
         return (
             <div className="s1">
@@ -31,12 +31,18 @@ class S1 extends Component {
                             <Card.Body>
                             <Card.Title>Video Games</Card.Title>
                             <Card.Text>
-                                This is a wider card with supporting text below as a natural lead-in
-                                to additional content. This content is a little bit longer.
+                            <ListGroup variant="flush">
+                                <ListGroup.Item>Retro Games (SNES, Genesis, PS1, etc.)</ListGroup.Item>
+                                <ListGroup.Item>Modern Games (PS5, Switch, Series X|S, etc.)</ListGroup.Item>
+                                <ListGroup.Item>Accessories (Controllers, Headsets, Mechanical Keyboards, etc.)</ListGroup.Item>
+                                <ListGroup.Item>Consoles (Fom Atari 2600 to PS5)</ListGroup.Item>
+                            </ListGroup>
                             </Card.Text>
                             </Card.Body>
                             <Card.Footer>
-                            <small className="text-muted">Last updated 3 mins ago</small>
+                                <small className="text-muted">
+                                    <Button variant="warning">Show More</Button>
+                                </small>
                             </Card.Footer>
                         </Card>
                         <p className='break'>-</p>
@@ -53,7 +59,9 @@ class S1 extends Component {
                             </Card.Text>
                             </Card.Body>
                             <Card.Footer>
-                            <large className="text-muted">More</large>
+                                <small className="text-muted">
+                                    <Button variant="warning">Show More</Button>
+                                </small>
                             </Card.Footer>
                         </Card>
                         <p className='break'>-</p>
@@ -62,9 +70,11 @@ class S1 extends Component {
                             <Card.Body>
                             <Card.Title>Collectibles</Card.Title>
                             <Card.Text>
-                                This is a wider card with supporting text below as a natural lead-in
-                                to additional content. This card has even longer content than the
-                                first to show that equal height action.
+                            <ListGroup variant="flush">
+                                <ListGroup.Item>Board Games</ListGroup.Item>
+                                <ListGroup.Item>Collectible Card Games (MGT, Pokemon, Key Forge, etc.)</ListGroup.Item>
+                                <ListGroup.Item>Roll Playing Games (D&D, Fate Core, etc.)</ListGroup.Item>
+                            </ListGroup>
                             </Card.Text>
                             </Card.Body>
                             <Card.Footer>
