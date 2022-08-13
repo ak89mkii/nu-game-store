@@ -4,38 +4,68 @@ import ListGroup from 'react-bootstrap/ListGroup';
 import { Container, Card, Button } from 'react-bootstrap';
 import './S1.css';
 import VGInfo from '../../components/VGInfo/VGInfo.jsx'
-// import VGInfo from '../../components/S2/S2.jsx'
+import BGInfo from '../../components/BGInfo/BGInfo.jsx'
 // import VGInfo from '../../components/S2/S2.jsx'
 
 class S1 extends Component {
     state = {
-        // Show More Button:
+        // Video Games Button State:
         openVG: false,
         buttonVG: 'Show More',
         buttonColorVG: 'warning',
+        // Tabletop Games Button State:
         openBG: false,
-        openCol: false
+        buttonBG: 'Show More',
+        buttonColorBG: 'warning',
+        // Collectibles Button State:
+        openCol: false,
+        buttonCol: 'Show More',
+        buttonColorCol: 'warning',
     }
 
-    toggleVG = () => {
-        if (this.state.openVG == false) {
-            this.setState({
-                openVG: <VGInfo />,
-                buttonVG: 'Close View',
-                buttonColorVG: 'dark'
-            })
-        } else if (this.state.openVG != false) {
-            this.setState({
-                openVG: false,
-                buttonVG: 'Show More',
-                buttonColorVG: 'warning'
-            })
+        // Video Games Button Open/Close Function:
+        toggleVG = () => {
+            if (this.state.openVG == false) {
+                this.setState({
+                    openVG: <VGInfo />,
+                    buttonVG: 'Close View',
+                    buttonColorVG: 'dark',
+
+                    openBG: false,
+                    buttonBG: 'Show More',
+                    buttonColorBG: 'warning'
+                })
+            } else if (this.state.openVG != false) {
+                this.setState({
+                    openVG: false,
+                    buttonVG: 'Show More',
+                    buttonColorVG: 'warning'
+                })
+            }
         }
-    }
+
+         // Tabletop Games Button Open/Close Function:
+         toggleBG = () => {
+            if (this.state.openBG == false) {
+                this.setState({
+                    openBG: <BGInfo />,
+                    buttonBG: 'Close View',
+                    buttonColorBG: 'dark',
+
+                    openVG: false,
+                    buttonVG: 'Show More',
+                    buttonColorVG: 'warning'
+                })
+            } else if (this.state.openBG != false) {
+                this.setState({
+                    openBG: false,
+                    buttonBG: 'Show More',
+                    buttonColorBG: 'warning'
+                })
+            }
+        }
 
     render() {
-        // Show More Button:
-        const { openVG } = this.state
         return (
             <div className="s1">
                 <br></br>
@@ -61,7 +91,11 @@ class S1 extends Component {
                             </Card.Body>
                             <Card.Footer>
                                 <small className="text-muted">
-                                    <Button variant={this.state.buttonColorVG} onClick={this.toggleVG}>{this.state.buttonVG}</Button>
+                                    <Button 
+                                        variant={this.state.buttonColorVG} onClick={this.toggleVG}
+                                    >
+                                        {this.state.buttonVG}
+                                    </Button>
                                 </small>
                             </Card.Footer>
                         </Card>
@@ -81,7 +115,11 @@ class S1 extends Component {
                             </Card.Body>
                             <Card.Footer>
                                 <small className="text-muted">
-                                    <Button variant="warning">Show More</Button>
+                                    <Button 
+                                        variant={this.state.buttonColorBG} onClick={this.toggleBG}
+                                    >
+                                        {this.state.buttonBG}
+                                    </Button>
                                 </small>
                             </Card.Footer>
                         </Card>
@@ -109,6 +147,7 @@ class S1 extends Component {
                     </Container>
                 </Container>
                 {this.state.openVG}
+                {this.state.openBG}
                 <br></br>
             </div>
         )
