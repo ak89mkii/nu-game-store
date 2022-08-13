@@ -13,7 +13,7 @@ const VGInfo = (props) => {
         <div className='info'>
             <br></br>
             <Container>
-            <h1>Video Game Top Brands</h1>
+            <h1 className='infoTitle'>Video Game Top Brands</h1>
             <img className='infoImage' src={Sega}></img>
             <img className='infoImage' src='https://pngimg.com/uploads/sony_playstation/sony_playstation_PNG17532.png'></img>
             <img className='infoImage' src='https://progressbar.com.au/wp-content/uploads/2017/06/Nintendo-Banner.png'></img>
