@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Teko:wght@300;500&display=swap');
+
+/* Section 02 (S2): */
+
+.s2 {
+  /* background-color: #EEEE00; */
+  /* background-color: #95dbc1; */
+  background-color: #08f9a0;
+  text-align: center;
+  font-family: 'Teko', sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+}
+
+.s2TitleSub {
+  color: black;
+  font-size: 25px;
+  font-family: 'Teko', sans-serif;
+  font-weight: 300;
+}
+
+.s2TitleSubDark {
+  color: white;
+  font-size: 25px;
+  font-family: 'Teko', sans-serif;
+  font-weight: 300;
+}

@@ -20,7 +20,7 @@ class Home extends Component {
         menu:  'ui menu',
         contact: 'contact',
         s1TitleSub: 's1TitleSub',
-        s2: 's2',
+        s2table: 'light',
         s2TitleSub: 's2TitleSub',
         icon: sun,
         iconSize: 'iconSize',
@@ -36,7 +36,7 @@ class Home extends Component {
                 menu: 'ui inverted menu',
                 contact: 'contactDark',
                 s1TitleSub: 's1TitleSubDark',
-                s2: 's2Dark',
+                s2table: 'dark',
                 s2TitleSub: 's2TitleSubDark',
                 icon: moon,
             })
@@ -49,7 +49,7 @@ class Home extends Component {
                 menu: 'ui menu',
                 contact: 'contact',
                 s1TitleSub: 's1TitleSub',
-                s2: 's2',
+                s2table: 'light',
                 s2TitleSub: 's2TitleSub',
                 icon: sun,
             })
@@ -78,7 +78,7 @@ class Home extends Component {
                     s2TitleSub={this.state.s2TitleSub}
                 />
                 <S2 
-                    s2={this.state.s2}
+                    s2table={this.state.s2table}
                     s2TitleSub={this.state.s2TitleSub}
                 />
                 <Contact

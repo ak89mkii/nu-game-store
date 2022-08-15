@@ -1,18 +1,18 @@
 import React, { Component } from 'react';
 import Table from 'react-bootstrap/Table';
 import { Container } from 'react-bootstrap';
-import '../../App.css';
+import './S2.css';
 
 const S2 = (props) => {
 
     return (
-        <div className='s3'>
+        <div className='s2'>
             <br></br>
             <Container>
                 <h2>Weekly Events</h2>
                 <p className="s2TitleSub">We hold a few weekly event in-store as well as special events. Join our newsletter</p>
-                <Table className={props.s2} bordered hover>
-                    <thead className={props.s2}>
+                <Table striped bordered hover variant={props.s2table}>
+                    <thead>
                         <tr>
                         <th>Day</th>
                         <th>6 - 7 p.m.</th>
@@ -21,7 +21,7 @@ const S2 = (props) => {
                         <th>9 - 10 p.m.</th>
                         </tr>
                     </thead>
-                    <tbody className={props.s2}>
+                    <tbody>
                         <tr>
                         <td>Mon</td>
                         <td colSpan={3}>Test a board game</td>

@@ -7,20 +7,11 @@
   font-weight: 300;
 }
 
-.d-block {
-  height: 500px;
-}
-
-.card-img-top {
-  width: 100%;
-  height: 400px;
-  object-fit: cover;
-}
-
 .screen {
   background-color: rgb(27, 27, 27);
   font-size: 30px;
 }
+
 
 /* Menu: */
 
@@ -79,6 +70,7 @@
   color: white;
 }
 
+
 /* Index Page: */
 
 .title {
@@ -109,6 +101,7 @@
   }
 }
 
+
 /* Start Button: */
 
 .buttonStart {
@@ -138,6 +131,7 @@
   }
 }
 
+
 /* Error 404 Button: */
 
 .button404 {
@@ -160,73 +154,7 @@
 }
 
 
-/* Section 02 (S2): */
-.s2 {
-  background-color: white;
-  text-align: center;
-  font-family: 'Teko', sans-serif;
-}
-
-.s2Dark {
-  background-color: rgb(27, 27, 27);
-  text-align: center;
-  font-family: 'Teko', sans-serif;
-  color: white;  
-}
-
-.s2TitleSub {
-  color: black;
-  font-size: 25px;
-  font-family: 'Teko', sans-serif;
-  font-weight: 300;
-}
-
-.s2TitleSubDark {
-  color: white;
-  font-size: 25px;
-  font-family: 'Teko', sans-serif;
-  font-weight: 300;
-}
-
-.card {
-  background-color: cornflowerblue;
-  border-style: solid;
-  border-width: 10px;
-  border-color: cornflowerblue;
-}
-
-@media only screen and (max-width: 600px) {
-  .s2TitleSub {
-    color: black;
-    font-size: 30px;
-    font-family: 'Teko', sans-serif;
-    font-weight: 300;
-  }
-}
-
-.s3 {
-  /* background-color: #EEEE00; */
-  /* background-color: #95dbc1; */
-  background-color: #08f9a0;
-  text-align: center;
-  font-family: 'Teko', sans-serif;
-  font-weight: 300;
-  font-size: 20px;
-}
-
-/* Contact */
-/* .contact {
-  background-color: white;
-} */
-
-.contactDark {
-  background-color: rgb(27, 27, 27);
-}
-
-
-.monk {
-  visibility: hidden;
-}
+/* Contacts: */
 
 .contacts {
   background-color: white;
