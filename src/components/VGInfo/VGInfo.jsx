@@ -1,7 +1,4 @@
 import React, { Component } from 'react';
-import StartButton from '../StartButton/StartButton.jsx'
-import CardGroup from 'react-bootstrap/CardGroup';
-import ListGroup from 'react-bootstrap/ListGroup';
 import { Container, Card } from 'react-bootstrap';
 import './VGInfo.css';
 import Sega from './img/sega.png'
