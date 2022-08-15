@@ -5,7 +5,7 @@ import { Container, Card, Button } from 'react-bootstrap';
 import './S1.css';
 import VGInfo from '../../components/VGInfo/VGInfo.jsx'
 import BGInfo from '../../components/BGInfo/BGInfo.jsx'
-// import VGInfo from '../../components/S2/S2.jsx'
+import ColInfo from '../ColInfo/ColInfo.jsx'
 
 class S1 extends Component {
     state = {
@@ -33,7 +33,11 @@ class S1 extends Component {
 
                     openBG: false,
                     buttonBG: 'Show More',
-                    buttonColorBG: 'warning'
+                    buttonColorBG: 'warning',
+
+                    openCol: false,
+                    buttonCol: 'Show More',
+                    buttonColorCol: 'warning',
                 })
             } else if (this.state.openVG != false) {
                 this.setState({
@@ -44,8 +48,8 @@ class S1 extends Component {
             }
         }
 
-         // Tabletop Games Button Open/Close Function:
-         toggleBG = () => {
+        // Tabletop Games Button Open/Close Function:
+        toggleBG = () => {
             if (this.state.openBG == false) {
                 this.setState({
                     openBG: <BGInfo />,
@@ -54,13 +58,42 @@ class S1 extends Component {
 
                     openVG: false,
                     buttonVG: 'Show More',
-                    buttonColorVG: 'warning'
+                    buttonColorVG: 'warning',
+                    
+                    openCol: false,
+                    buttonCol: 'Show More',
+                    buttonColorCol: 'warning',
                 })
             } else if (this.state.openBG != false) {
                 this.setState({
                     openBG: false,
                     buttonBG: 'Show More',
                     buttonColorBG: 'warning'
+                })
+            }
+        }
+
+        // Collectibles Button Open/Close Function:
+        toggleCol = () => {
+            if (this.state.openCol == false) {
+                this.setState({
+                    openCol: <ColInfo />,
+                    buttonCol: 'Close View',
+                    buttonColorCol: 'dark',
+
+                    openVG: false,
+                    buttonVG: 'Show More',
+                    buttonColorVG: 'warning',
+
+                    openBG: false,
+                    buttonBG: 'Show More',
+                    buttonColorBG: 'warning',
+                })
+            } else if (this.state.openCol != false) {
+                this.setState({
+                    openCol: false,
+                    buttonCol: 'Show More',
+                    buttonColorCol: 'warning'
                 })
             }
         }
@@ -139,8 +172,11 @@ class S1 extends Component {
                             </Card.Body>
                             <Card.Footer>
                                 <small className="text-muted">
-                                    <Button variant="warning">Show More</Button>
-                                </small>
+                                    <Button 
+                                        variant={this.state.buttonColorCol} onClick={this.toggleCol}
+                                    >
+                                        {this.state.buttonCol}
+                                    </Button>                                </small>
                             </Card.Footer>
                         </Card>
                     </CardGroup>
@@ -148,6 +184,7 @@ class S1 extends Component {
                 </Container>
                 {this.state.openVG}
                 {this.state.openBG}
+                {this.state.openCol}
                 <br></br>
             </div>
         )
