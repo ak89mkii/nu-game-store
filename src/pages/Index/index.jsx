@@ -88,8 +88,8 @@ class Home extends Component {
                     s2TitleSub={this.state.s2TitleSub}
                 />
                 <Contact
-                    s2={this.state.s2}
-                    s2TitleSub={this.state.s2TitleSub}
+                    s3={this.state.s3}
+                    s3TitleSub={this.state.s3TitleSub}
                 />
             </div>
         )
