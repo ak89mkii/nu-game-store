@@ -22,6 +22,8 @@ class Home extends Component {
         s1TitleSub: 's1TitleSub',
         s2table: 'light',
         s2TitleSub: 's2TitleSub',
+        s3: 's3',
+        s3TitleSub: 's3TitleSub',
         icon: sun,
         iconSize: 'iconSize',
     }
@@ -38,6 +40,8 @@ class Home extends Component {
                 s1TitleSub: 's1TitleSubDark',
                 s2table: 'dark',
                 s2TitleSub: 's2TitleSubDark',
+                s3: 's3Dark',
+                s3TitleSub: 's3TitleSubDark',
                 icon: moon,
             })
         } else if (this.state.mode == 'dark') {
@@ -51,6 +55,8 @@ class Home extends Component {
                 s1TitleSub: 's1TitleSub',
                 s2table: 'light',
                 s2TitleSub: 's2TitleSub',
+                s3: 's3',
+                s3TitleSub: 's3TitleSub',
                 icon: sun,
             })
         }
@@ -74,8 +80,8 @@ class Home extends Component {
                 <Slides />
                 <S1 />
                 <S3 
-                    s2={this.state.s2}
-                    s2TitleSub={this.state.s2TitleSub}
+                    s3={this.state.s3}
+                    s3TitleSub={this.state.s3TitleSub}
                 />
                 <S2 
                     s2table={this.state.s2table}

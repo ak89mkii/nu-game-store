@@ -10,7 +10,7 @@ const S2 = (props) => {
             <br></br>
             <Container>
                 <h2>Weekly Events</h2>
-                <p className="s2TitleSub">We hold a few weekly event in-store as well as special events. Join our newsletter</p>
+                <p className="s2TitleSub">We hold a few weekly event in-store as well as special events.</p>
                 <Table striped bordered hover variant={props.s2table}>
                     <thead>
                         <tr>
