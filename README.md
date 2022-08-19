@@ -26,6 +26,7 @@ Landing page for a hypothetical local game store.
 #### Images References / Credits:
 // https://thenounproject.com/icon/gundam-21590/
 // https://google-map-generator.com/
+// https://thenounproject.com/icon/video-game-2377546/
 #### Sounds References / Credits:
 #### Fonts / Credits:
 // https://fonts.google.com/?query=teko
