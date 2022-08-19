@@ -28,8 +28,8 @@ const Contact = (props) => {
                             <Card.Body>
                             <Card.Title><h1>Contact Info:</h1></Card.Title>
                             <ListGroup variant="flush">
-                                <ListGroup.Item>Email: </ListGroup.Item>
-                                <ListGroup.Item>Phone:</ListGroup.Item>
+                                <ListGroup.Item><b>Email</b>: echo3@echobase.com</ListGroup.Item>
+                                <ListGroup.Item><b>Phone</b>: (588) 117-5334</ListGroup.Item>
                             </ListGroup>
                             </Card.Body>
                         </Card>
@@ -40,10 +40,11 @@ const Contact = (props) => {
                             <ListGroup variant="flush">
                                 <ListGroup.Item><b>Sunday</b>: Closed</ListGroup.Item>
                                 <ListGroup.Item><b>Monday</b>: 9:00am - 10:30pm</ListGroup.Item>
-                                <ListGroup.Item>Tuesday: </ListGroup.Item>
-                                <ListGroup.Item>Monday:</ListGroup.Item>
-                                <ListGroup.Item>Sunday: </ListGroup.Item>
-                                <ListGroup.Item>Monday:</ListGroup.Item>
+                                <ListGroup.Item><b>Tuesday</b>: 9:00am - 10:30pm</ListGroup.Item>
+                                <ListGroup.Item><b>Wednesday</b>: 9:00am - 10:30pm</ListGroup.Item>
+                                <ListGroup.Item><b>Thursday</b>: 9:00am - 10:30pm</ListGroup.Item>
+                                <ListGroup.Item><b>Friday</b>: 9:00am - 11:30pm</ListGroup.Item>
+                                <ListGroup.Item><b>Saturday</b>: 9:00am - 11:30pm</ListGroup.Item>
                             </ListGroup>
                             </Card.Body>
                         </Card>
