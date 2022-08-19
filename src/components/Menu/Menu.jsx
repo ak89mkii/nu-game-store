@@ -4,13 +4,14 @@ import  Form from 'react-bootstrap/Form';
 import '../../App.css';
 import Logo from '../../img/nulogo.png'
 
-const Header = (props) => {
+const Menu = (props) => {
     
     return (
         <div className={props.mode}>
             <br></br>
             <Container>
-            <h1 className={props.title}><img className='title' src={Logo}></img>Nu Game Store</h1>
+            <div className={props.title}><img className='titleImage {
+' src={Logo}></img>Nu Game Store</div>
             <h4>Video Games, Tabletop Games, Cards, Models & More</h4>
             <Form>
                 <Form.Check 
@@ -26,4 +27,4 @@ const Header = (props) => {
     )
 }
 
-export default Header
+export default Menu
