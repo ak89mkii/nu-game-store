@@ -7,14 +7,14 @@ import './Contact.css';
 const Contact = (props) => {
 
     return (
-        <div className={props.s3}>
+        <div className={props.contact}>
         {/* <div className='contacts'> */}
             <br></br>
             <Container>
                 <h2>Hours & Contact Info</h2>
                 {/* <p className={props.s3TitleSub}></p> */}
                 <Container>
-                    <CardGroup className='s3TitleSub'>
+                    <CardGroup className='contactTitleSub'>
                         
                         <Card> 
                             <iframe width="100%" height="100%" id="gmap_canvas" src="https://maps.google.com/maps?q=google,%20New%20York&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>

@@ -23,7 +23,7 @@ class Home extends Component {
         s2table: 'light',
         s2TitleSub: 's2TitleSub',
         s3: 's3',
-        s3TitleSub: 's3TitleSub',
+        s3Text: 's3Text',
         icon: sun,
         iconSize: 'iconSize',
     }
@@ -41,7 +41,7 @@ class Home extends Component {
                 s2table: 'dark',
                 s2TitleSub: 's2TitleSubDark',
                 s3: 's3Dark',
-                s3TitleSub: 's3TitleSubDark',
+                s3Text: 's3TextDark',
                 icon: moon,
             })
         } else if (this.state.mode == 'dark') {
@@ -56,7 +56,7 @@ class Home extends Component {
                 s2table: 'light',
                 s2TitleSub: 's2TitleSub',
                 s3: 's3',
-                s3TitleSub: 's3TitleSub',
+                s3Text: 's3Text',
                 icon: sun,
             })
         }
@@ -81,15 +81,15 @@ class Home extends Component {
                 <S1 />
                 <S3 
                     s3={this.state.s3}
-                    s3TitleSub={this.state.s3TitleSub}
+                    s3Text={this.state.s3Text}
                 />
                 <S2 
                     s2table={this.state.s2table}
                     s2TitleSub={this.state.s2TitleSub}
                 />
                 <Contact
-                    s3={this.state.s3}
-                    s3TitleSub={this.state.s3TitleSub}
+                    // s3={this.state.s3}
+                    // s3TitleSub={this.state.s3TitleSub}
                 />
                 <Footer />
             </div>
