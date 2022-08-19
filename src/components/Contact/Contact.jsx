@@ -45,7 +45,7 @@ const Contact = (props) => {
                                 <ListGroup.Item><b>Thursday</b>: 9:00am - 10:30pm</ListGroup.Item>
                                 <ListGroup.Item><b>Friday</b>: 9:00am - 11:30pm</ListGroup.Item>
                                 <ListGroup.Item><b>Saturday</b>: 9:00am - 11:30pm</ListGroup.Item>
-                            </ListGroup>
+                                </ListGroup>
                             </Card.Body>
                         </Card>
 

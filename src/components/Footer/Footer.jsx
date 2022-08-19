@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import { Link } from "react-router-dom";
+import Alert from 'react-bootstrap/Alert';
+import Container from 'react-bootstrap/Container';
 import '../../App.css';
-import The404Button from '../404Button/404Button.jsx'
 
 class Footer extends Component {
     state = {
@@ -16,7 +16,12 @@ class Footer extends Component {
     render() {
         const { open } = this.state
         return (
-            <div>
+            <div className='contacts'>
+                <hr class="bg-warning border-2 border-top border-warning" />
+                <div className='contacts'>
+                    Copyright &#169; Nu Game Store 2022
+                </div>
+                <br></br>
             </div>
         )
     }

@@ -91,6 +91,7 @@ class Home extends Component {
                     s3={this.state.s3}
                     s3TitleSub={this.state.s3TitleSub}
                 />
+                <Footer />
             </div>
         )
     }

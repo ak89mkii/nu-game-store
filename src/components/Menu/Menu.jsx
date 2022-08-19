@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
-import { Link } from "react-router-dom";
 import Container from 'react-bootstrap/Container';
 import  Form from 'react-bootstrap/Form';
-import { Divider } from 'react-bootstrap';
 import '../../App.css';
 import Logo from '../../img/nulogo.png'
 
