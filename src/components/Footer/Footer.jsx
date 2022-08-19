@@ -1,6 +1,4 @@
 import React, { Component } from 'react';
-import Alert from 'react-bootstrap/Alert';
-import Container from 'react-bootstrap/Container';
 import '../../App.css';
 
 class Footer extends Component {
