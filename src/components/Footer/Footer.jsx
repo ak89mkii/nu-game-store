@@ -19,7 +19,6 @@ class Footer extends Component {
                 <div className='contacts'>
                     Copyright &#169; Nu Game Store 2022
                 </div>
-                <br></br>
             </div>
         )
     }
