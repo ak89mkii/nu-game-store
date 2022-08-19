@@ -18,7 +18,8 @@ class Home extends Component {
         photo: 'photo',
         title: 'lightTitle',
         menu:  'ui menu',
-        contact: 'contact',
+        contact: 'contact',                
+        contactTitleSub: 'contactTitleSub',
         s1TitleSub: 's1TitleSub',
         s2table: 'light',
         s2TitleSub: 's2TitleSub',
@@ -88,8 +89,8 @@ class Home extends Component {
                     s2TitleSub={this.state.s2TitleSub}
                 />
                 <Contact
-                    // s3={this.state.s3}
-                    // s3TitleSub={this.state.s3TitleSub}
+                    contact={this.state.contact}
+                    contactTitleSub={this.state.contactTitleSub}
                 />
                 <Footer />
             </div>

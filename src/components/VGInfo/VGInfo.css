@@ -14,6 +14,12 @@
   text-align: left;
 }
 
+@media only screen and (max-width: 600px) {
+  .infoTitleVG {
+    text-align: center;
+  }
+}
+
 .infoImage {
   width: 150px;
   height: 150px;

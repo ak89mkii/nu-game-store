@@ -124,11 +124,13 @@ class S1 extends Component {
                             </Card.Body>
                             <Card.Footer>
                                 <small className="text-muted">
+                                    <a href='#openSection'>
                                     <Button 
                                         variant={this.state.buttonColorVG} onClick={this.toggleVG}
                                     >
                                         {this.state.buttonVG}
                                     </Button>
+                                    </a>
                                 </small>
                             </Card.Footer>
                         </Card>
@@ -148,11 +150,13 @@ class S1 extends Component {
                             </Card.Body>
                             <Card.Footer>
                                 <small className="text-muted">
+                                    <a href='#openSection'>
                                     <Button 
                                         variant={this.state.buttonColorBG} onClick={this.toggleBG}
                                     >
                                         {this.state.buttonBG}
                                     </Button>
+                                    </a>
                                 </small>
                             </Card.Footer>
                         </Card>
@@ -172,13 +176,17 @@ class S1 extends Component {
                             </Card.Body>
                             <Card.Footer>
                                 <small className="text-muted">
+                                    <a href='#openSection'>
                                     <Button 
                                         variant={this.state.buttonColorCol} onClick={this.toggleCol}
                                     >
                                         {this.state.buttonCol}
-                                    </Button>                                </small>
+                                    </Button>
+                                    </a>
+                                    </small>
                             </Card.Footer>
                         </Card>
+                        <div id='openSection'></div>
                     </CardGroup>
                     </Container>
                 </Container>

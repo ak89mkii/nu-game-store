@@ -78,14 +78,6 @@
 }
 
 
-/* Footer: */
-
-.footer {
-  background-color: rgb(27, 27, 27);
-  color: white;
-}
-
-
 /* Start Button: */
 
 .buttonStart {
@@ -138,9 +130,9 @@
 }
 
 
-/* Contacts: */
+/* Footer */
 
-.contacts {
+.footer {
   background-color: white;
   text-align: center;
   font-family: 'Teko', sans-serif;

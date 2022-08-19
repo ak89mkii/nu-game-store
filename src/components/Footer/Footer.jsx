@@ -14,10 +14,10 @@ class Footer extends Component {
     render() {
         const { open } = this.state
         return (
-            <div className='contacts'>
+            <div className='footer'>
                 <hr class="bg-warning border-2 border-top border-warning" />
                 <div className='contacts'>
-                    Copyright &#169; Nu Game Store 2022
+                    Copyright &#169; Ponder Code | Nu Game Store 2022
                 </div>
             </div>
         )

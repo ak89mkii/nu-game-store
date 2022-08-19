@@ -10,8 +10,7 @@ const Menu = (props) => {
         <div className={props.mode}>
             <br></br>
             <Container>
-            <div className={props.title}><img className='titleImage {
-' src={Logo}></img>Nu Game Store</div>
+            <div className={props.title}><img className='titleImage' src={Logo}></img>Nu Game Store</div>
             <h4>Video Games, Tabletop Games, Cards, Models & More</h4>
             <Form>
                 <Form.Check 
